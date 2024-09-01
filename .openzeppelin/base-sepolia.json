@@ -1,0 +1,187 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x75Abe9Fb93645672F137dD27420ac125A30a6d07",
+      "txHash": "0xfb2ceca72522a76c8619ee50a6717ac2fd739623ff6505e41983472bd05e4090",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "6ae832b5d6e901f82877fbd447688f0cbd72354e818b0e72380e0dc862f2cd3b": {
+      "address": "0x30e0599BA02aa06814a2D02a19D7bf45c6e5e1E2",
+      "txHash": "0x2b49a89099fb6297e5fe980b0c77b1f0aa1c369c12540e1f3612908275a7aa8d",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "PROTOCOL_COLLECTION_ADDRESS",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "NFTModule",
+            "src": "Contracts\\NFTModule.sol:21"
+          },
+          {
+            "label": "addressManager",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IAddressManager)7283",
+            "contract": "NFTModule",
+            "src": "Contracts\\NFTModule.sol:22"
+          },
+          {
+            "label": "collectionFactory",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(ICollectionFactory)7329",
+            "contract": "NFTModule",
+            "src": "Contracts\\NFTModule.sol:23"
+          },
+          {
+            "label": "collectionToken",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(ICollectionToken)7352",
+            "contract": "NFTModule",
+            "src": "Contracts\\NFTModule.sol:24"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)80_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)669_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)740_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_contract(IAddressManager)7283": {
+            "label": "contract IAddressManager",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ICollectionFactory)7329": {
+            "label": "contract ICollectionFactory",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ICollectionToken)7352": {
+            "label": "contract ICollectionToken",
+            "numberOfBytes": "20"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ReentrancyGuardUpgradeable.sol:40",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
